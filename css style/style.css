@@ -4,12 +4,26 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --main-black: #000000;
+    --main-white: #ffffff;
+    --light-black: #222222;
+    --green: #1e3932;
+    --light-pink: #fa91aa;
+    --pink: #f06464;
+    --orange: #faaa5a;
+    --light-green: #9bf5b4;
+}
+
+
+/* NAVBAR */
 .nav-bar {
     height: 15vh;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 2px solid var(--light-black);
+    margin-bottom: 2.5%;
 }
 
 .nav-bar > div{
@@ -22,11 +36,12 @@
     margin-left: 2.75%;
 }
 .nav-div-a > a {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
-    color: black;
+    color: var(--light-black);
     text-decoration: none;
     margin-left: 5%;
+    letter-spacing: 2px;
 }
 .nav-div-b {
     justify-content: right;
@@ -34,25 +49,66 @@
 .nav-div-b > a{
     font-size: 15px;
     font-weight: 600;
-    color: black;
+    color: var(--light-black);
     text-decoration: none;
     margin-right: 5%;
 }
 
 #btn-sign-in{
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 5px 15px;
-    color: black;
+    color: var(--light-black);
     background: transparent;
     font-weight: 600;
 }
 
 #btn-join-now {
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 5px 15px;
     color: white;
-    background: black;
+    background: var(--main-black);
     font-weight: 600;
 }
+
+/* STARBUCKS REWARDS */
+.starbucks-rewards {
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2.5%;
+}
+
+.starbucks-rewards-img-left {
+    background-image: url(../img/starbucks-rewards-left.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.starbucks-rewards-right {
+    background-color: var(--green);
+    color: var(--main-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#btn-join-starbucks {
+    background-color: transparent;
+    border: 1px solid var(--main-white);
+    border-radius: 15px;
+    color: var(--main-white);
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: .2s;
+}
+
+#btn-join-starbucks:hover {
+    background-color: #264139;
+    cursor: pointer;
+}
+
+/*  */
