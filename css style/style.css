@@ -11,7 +11,9 @@
     --green: #1e3932;
     --light-pink: #fa91aa;
     --pink: #f06464;
+    --cover-pink: #e98aa0;
     --orange: #faaa5a;
+    --cover-orange: #e7a25d; 
     --light-green: #9bf5b4;
 }
 
@@ -54,7 +56,7 @@
     margin-right: 5%;
 }
 
-#btn-sign-in{
+#btn-sign-in {
     border: 1px solid black;
     border-radius: 15px;
     padding: 5px 15px;
@@ -71,6 +73,8 @@
     background: var(--main-black);
     font-weight: 600;
 }
+
+
 
 /* STARBUCKS REWARDS */
 .starbucks-rewards {
@@ -111,4 +115,115 @@
     cursor: pointer;
 }
 
-/*  */
+
+
+
+/* BACK TO SCHOOL */
+.back-to-school {
+    height: 87.5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2.5%;
+}
+
+.back-to-school-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--orange);
+    color: var(--light-black);
+    text-align: center;
+    gap: 5%;
+}
+
+.back-to-school-left h1 {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.back-to-school-left p {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#btn-send-an-eGift {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px 15px;
+    color: var(--light-black);
+    background: transparent;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#btn-send-an-eGift:hover {
+    background-color: #e7a25d;
+    cursor: pointer;
+}
+
+.back-to-school-right {
+    background-image: url(../img/back-to-school.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+/* BRIGHT DRINKS */
+.bright-drinks {
+    height: 87.5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2.5%;
+}
+
+.bright-drinks-left {
+    background-image: url(../img/brightest-drink.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bright-drinks-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color:var(--light-pink);
+    color: var(--light-black);
+    text-align: center;
+    gap: 5%;
+}
+
+.bright-drinks-right h1 {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.bright-drinks-right p {
+    font-size: 22.5px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#btn-learn-more {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px 15px;
+    color: var(--light-black);
+    background: transparent;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#btn-learn-more:hover {
+    background-color: var(--cover-pink);
+    cursor: pointer;
+}
+
