@@ -285,3 +285,28 @@
 
 
 /* FOOTER A */
+.footer-a {
+    height: 22.5vh;
+    border: 1px solid red;
+
+    color: var(--light-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+}
+
+.footer-a a {
+    color: var(--light-black);
+}
+
+
+/* FOOTER B */
+.footer-b {
+    height: 98.5vh;
+    border: 1px solid black;
+}
+
+
+/* FOOTER C */
